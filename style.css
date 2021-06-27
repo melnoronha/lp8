@@ -1,0 +1,118 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* COLORS and FONTS */
+body {
+      text-align: center;
+      font-family: Verdana;
+      background-color: white;
+      color: darkorange;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: #cc6600; /* https://rgbacolorpicker.com/hex-color-picker */
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main {
+  text-align: center; 
+  background: white; 
+  color: #cc6600;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 10px; 
+  text-align: center;
+  background: black; 
+}
+
+.left-sidebar {
+  color: #e36b12; /* #e36b12 */
+  background-color: #c9c6a5; /* #c9c6a5, #ccbc9a, #e9dca3 */
+  padding: 180px; 
+  text-align: center;
+  font-size: 30px;
+}
+
+.right-sidebar {
+  color: black; /* #e36b12 */
+  background-color: white; /* White background color */
+  padding: 140px; /* Some padding */
+  font-size: 22px;
+}
+
+.button {
+	text-decoration: none;
+  	border: none; /* Remove borders */
+  	color: white; /* Add a text color */
+  	background-color: #cc6600; 
+  	padding: 5px 10px; /* Add some padding */
+  	border-radius: 10px;
+  	font-size: 18px;
+  	font-weight: bold;
+}
+
+.button:hover{
+  background-color: rgba(201, 198, 165, 0.8);
+}
+
+.LeWagon{
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.FutreOfWork{
+  text-decoration: none;
+  color: #cc6600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;    
+    } 
+    
+  header,footer {
+        width: 100%;
+    }
+    
+  .main {
+      width: 100%;
+    }
+
+  .message {
+  position: absolute;
+  bottom: 50%
+  right: 50%
+  font-size: 8vw;
+}
+
+    
+  .left-sidebar {
+        flex: 1;
+        order:1;
+       
+    }
+  .right-sidebar {
+        flex: 1;
+        order: 2;
+    }
+    
+    footer {
+        order: 3;
+    }
+}
